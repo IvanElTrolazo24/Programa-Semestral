@@ -10,7 +10,7 @@ void areadeuncirculo()
 {
 	int r; float area;
 		/* code */
-	cout<<"Programa para calcular el area de un cÃ­rculo"<< endl;
+	cout<<"Programa para calcular el area de un circulo"<< endl;
 	cout<<"Escriba el radio:"<< endl;
 	cin>> r;
 	area= (3.1416)*(r*r);
@@ -809,14 +809,15 @@ void pagina1()
 	cout<<"//Bienvenido a la pagina 1//\nEscoge el programa al que quieres ir:"<<endl;
 	cout<<"1.-Area de un circulo.\n2.-Edad de una persona.\n3.-Estaciones\n4.-Mayor de 3 numeros\n5.-Tabla del 8\n6.-Conversion dolares a peso\n7.-Volver al menu principal o salir "<<endl;
 	cin>>op;
+	system("cls");
 	switch(op)
 	{
-		case 1:{areadeuncirculo();break;}
-		case 2:{anos();break;}
-		case 3:{estaciones();break;}
-		case 4:{mayorde3();break;}
-		case 5:{tabla8();break;}
-		case 6:{dolarespeso();break;}
+		case 1:{areadeuncirculo();cout<<"\nPresiona enter para proceder al menu de salir principal"<<endl;getch();break;}
+		case 2:{anos();cout<<"\nPresiona enter para proceder al menu de salir principal"<<endl;getch();break;}
+		case 3:{estaciones();cout<<"\nPresiona enter para proceder al menu de salir principal"<<endl;getch();break;}
+		case 4:{mayorde3();cout<<"\nPresiona enter para proceder al menu de salir principal"<<endl;getch();break;}
+		case 5:{tabla8();cout<<"\nPresiona enter para proceder al menu de salir principal"<<endl;getch();break;}
+		case 6:{dolarespeso();cout<<"\nPresiona enter para proceder al menu de salir principal"<<endl;getch();break;}
 		case 7:{salir();break;}
 		default:{cout<<"Error,presione enter para continuar."<<endl;getch();}
 	}
@@ -828,12 +829,12 @@ void pagina2()
 	cin>>op;
 	switch(op)
 	{
-		case 1:{numerospareseimpares();break;}
-		case 2:{positivonegativoneutralwhile();break;}
-		case 3:{edadwhile();break;}
-		case 4:{mayorde3while();break;}
-		case 5:{cualquiertabla();break;}
-		case 6:{ganancia();break;}
+		case 1:{numerospareseimpares();cout<<"\nPresiona enter para proceder al menu de salir principal"<<endl;getch();break;}
+		case 2:{positivonegativoneutralwhile();cout<<"\nPresiona enter para proceder al menu de salir principal"<<endl;getch();break;}
+		case 3:{edadwhile();cout<<"\nPresiona enter para proceder al menu de salir principal"<<endl;getch();break;}
+		case 4:{mayorde3while();cout<<"\nPresiona enter para proceder al menu de salir principal"<<endl;getch();break;}
+		case 5:{cualquiertabla();cout<<"\nPresiona enter para proceder al menu de salir principal"<<endl;getch();break;}
+		case 6:{ganancia();cout<<"\nPresiona enter para proceder al menu de salir principal"<<endl;getch();break;}
 		case 7:{salir();break;}
 		default:{cout<<"Error,presione enter para continuar."<<endl;getch();}
 	}
@@ -845,12 +846,12 @@ void pagina3()
 	cin>>op;
 	switch(op)
 	{
-		case 1:{estacioneswhile();break;}
-		case 2:{parimparwhile();break;}
-		case 3:{perimetro3fig();break;}
-		case 4:{califbool();break;}
-		case 5:{llenar5pos();break;}
-		case 6:{tablaamericachivas();break;}
+		case 1:{estacioneswhile();cout<<"\nPresiona enter para proceder al menu de salir principal"<<endl;getch();break;}
+		case 2:{parimparwhile();cout<<"\nPresiona enter para proceder al menu de salir principal"<<endl;getch();break;}
+		case 3:{perimetro3fig();cout<<"\nPresiona enter para proceder al menu de salir principal"<<endl;getch();break;}
+		case 4:{califbool();cout<<"\nPresiona enter para proceder al menu de salir principal"<<endl;getch();break;}
+		case 5:{llenar5pos();cout<<"\nPresiona enter para proceder al menu de salir principal"<<endl;getch();break;}
+		case 6:{tablaamericachivas();cout<<"\nPresiona enter para proceder al menu de salir principal"<<endl;getch();break;}
 		case 7:{salir();break;}
 		default:{cout<<"Error,presione enter para continuar."<<endl;getch();}
 	}
@@ -862,9 +863,9 @@ void pagina4()
 	cin>>op;
 	switch(op)
 	{
-		case 1:{sumrestmultdiv();break;}
-		case 2:{capturadedatos();break;}
-		case 3:{calculadora();break;}
+		case 1:{sumrestmultdiv();cout<<"\nPresiona enter para proceder al menu de salir principal"<<endl;getch();break;}
+		case 2:{capturadedatos();cout<<"\nPresiona enter para proceder al menu de salir principal"<<endl;getch();break;}
+		case 3:{calculadora();cout<<"\nPresiona enter para proceder al menu de salir principal"<<endl;getch();break;}
 		case 4:{salir();break;}
 		default:{cout<<"Error,presione enter para continuar."<<endl;getch();}
 	}
@@ -875,13 +876,14 @@ void menuprincipal()
 	cout<<"//Bienvenido al menu principal//\nEscoge la pagina a la que quieres ir:"<<endl;
 	cout<<"1.-Pagina 1\n2.-Pagina 2\n3.-Pagina 3\n4.-Pagina 4\n5.- Salir del programa"<<endl;
 	cin>>op;
+	system("cls");
 	switch(op)
 	{
-		case 1:{pagina1();break;}
-		case 2:{pagina2();break;}
-		case 3:{pagina3();break;}
-		case 4:{pagina4();break;}
-		case 5:{salir();break;}
+		case 1:{pagina1();system("cls");break;}
+		case 2:{pagina2();system("cls");break;}
+		case 3:{pagina3();system("cls");break;}
+		case 4:{pagina4();system("cls");break;}
+		case 5:{salir();system("cls");break;}
 		default:{cout<<"Error,presione enter para continuar."<<endl;getch();}
 	}
 }
